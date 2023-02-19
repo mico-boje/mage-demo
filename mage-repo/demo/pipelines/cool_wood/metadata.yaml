@@ -1,0 +1,50 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - small_bird
+  executor_config: null
+  executor_type: local_python
+  language: python
+  name: load_csv
+  status: executed
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_csv
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  language: python
+  name: red sun
+  status: updated
+  type: scratchpad
+  upstream_blocks: []
+  uuid: red_sun
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    data_provider: postgres
+    data_provider_profile: default
+    data_provider_schema: mage
+    data_provider_table: harddrive
+    export_write_policy: replace
+    use_raw_sql: false
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  language: sql
+  name: small bird
+  status: updated
+  type: data_exporter
+  upstream_blocks:
+  - load_csv
+  uuid: small_bird
+data_integration: null
+name: cool wood
+type: python
+uuid: cool_wood
+widgets: []

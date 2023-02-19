@@ -1,0 +1,18 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  language: python
+  name: white river
+  status: updated
+  type: scratchpad
+  upstream_blocks: []
+  uuid: white_river
+data_integration: null
+name: aged voice
+type: streaming
+uuid: aged_voice
+widgets: []
